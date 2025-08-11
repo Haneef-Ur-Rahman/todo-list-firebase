@@ -1,0 +1,138 @@
+ /* NEON Gradient Background */
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0ff, #ff00ff, #00ff99);
+            background-size: 400% 400%;
+            animation: neonBG 10s ease infinite;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        @keyframes neonBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Container */
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            margin-top: 50px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #0ff;
+            text-shadow: 0 0 15px #0ff, 0 0 30px #00ffffaa;
+            margin-bottom: 20px;
+        }
+
+        /* Input Group */
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #0ff;
+            border-radius: 6px;
+            font-size: 16px;
+            background: transparent;
+            color: #0ff;
+            outline: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+        input:focus {
+            box-shadow: 0 0 10px #0ff;
+        }
+
+        /* Buttons */
+        button {
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .add-btn {
+            background: #0ff;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 0 12px #0ff, 0 0 25px #0ff;
+        }
+
+        .add-btn:hover {
+            background: #00cccc;
+            box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+        }
+
+        .update-btn {
+            background: #ffea00;
+            color: #000;
+            font-weight: bold;
+            box-shadow: 0 0 12px #ffea00, 0 0 25px #ffea00;
+        }
+
+        .update-btn:hover {
+            background: #ffd700;
+            box-shadow: 0 0 20px #ffea00, 0 0 40px #ffea00;
+        }
+
+        .delete-btn {
+            background: #ff007f;
+            color: #fff;
+            font-weight: bold;
+            box-shadow: 0 0 12px #ff007f, 0 0 25px #ff007f;
+        }
+
+        .delete-btn:hover {
+            background: #cc0066;
+            box-shadow: 0 0 20px #ff007f, 0 0 40px #ff007f;
+        }
+
+        /* List */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 10px;
+            padding: 12px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s ease-in-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        li:hover {
+            background: rgba(0, 255, 255, 0.1);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 6px;
+        }
