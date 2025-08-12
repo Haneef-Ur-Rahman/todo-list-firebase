@@ -63,7 +63,6 @@ Contributions are welcome! Please:
 ## ⚠️ Important Notes
 
 - This implementation uses client-side JavaScript for Firebase operations
-- For production use, consider implementing proper security rules in Firebase
 - The current Firebase configuration is for demonstration purposes
 
 Enjoy organizing your tasks with style! The glowing interface makes productivity fun. 💫
